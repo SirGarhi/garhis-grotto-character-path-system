@@ -1,0 +1,111 @@
+{
+	"id": "garhis-grotto-character-paths",
+	"title": "Garhi's Grotto - Character Paths",
+	"description": "A split off module containing everything related to Character Paths.",
+	"version": "1.0.0",
+	"compatibility": {
+		"minimum": "12",
+		"verified": "12"
+	},
+	"authors": [
+		{
+			"name": "Garhi",
+			"email": "garhi@garhisgrotto.com",
+			"url": "http://www.garhisgrotto.com",
+			"discord": "garhi",
+			"flags": {}
+		}
+	],
+	"packs": [
+		{
+			"name": "gg-path-journal",
+			"label": "GG - Path Journals",
+			"path": "packs/path-journal",
+			"type": "JournalEntry",
+			"ownership": {
+				"PLAYER": "OBSERVER",
+				"ASSISTANT": "OWNER"
+			},
+			"system": "dnd5e",
+			"flags": {}
+		},
+		{
+			"name": "gg-path-feature",
+			"label": "GG - Path Features",
+			"path": "packs/path-feature",
+			"type": "Item",
+			"ownership": {
+				"PLAYER": "OBSERVER",
+				"ASSISTANT": "OWNER"
+			},
+			"system": "dnd5e",
+			"flags": {}
+		},
+		{
+			"name": "gg-path-actors",
+			"label": "GG - Path Actors",
+			"path": "packs/path-actors",
+			"type": "Actor",
+			"ownership": {
+				"PLAYER": "OBSERVER",
+				"ASSISTANT": "OWNER"
+			},
+			"system": "dnd5e",
+			"flags": {}
+		}
+	],
+	"packFolders": [
+		{
+			"name": "GG - Character Paths",
+			"sorting": "m",
+			"color": "#4C3661",
+			"packs": [
+				"gg-path-journal",
+				"gg-path-feature",
+				"gg-path-actors"
+			],
+			"folders": []
+		}
+	],
+	"relationships":{
+		"recommends": [
+			{
+				"id": "garhis-grotto-module",
+				"type": "module",
+				"compatibility": {}
+			}
+		],
+		"systems": [
+			{
+				"id": "dnd5e",
+				"type": "system",
+				"compatibility": {
+					"minimum": "3.0.0",
+					"verified": "3.3.1",
+					"maximum": "3.9.9"
+				}
+			}
+		],
+		"requires": []
+	},
+	"flags": {
+		"hotReload": {
+			"extensions": ["css", "hbs", "json"],
+			"paths": ["templates", "styles", "lang"]
+		}
+	},
+	"media": [
+		{
+			"type": "setup",
+			"url": "modules/garhis-grotto-module/assets/art/branding/garhis-grotto-logo.webp",
+			"loop": false,
+			"flags": {}
+		}
+	],
+	"readme": "",
+	"changelog": "",
+	"url": "",
+	"bugs": "",
+	"manifest": "",
+	"download": ""
+}

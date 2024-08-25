@@ -1,2 +1,2 @@
 # garhis-grotto-character-paths
- A module containing my homebrew Character Path sytem.
+ A Foundry VTT Module implementing my homebrew Character Path sytem.
