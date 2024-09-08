@@ -1,6 +1,6 @@
 {
-	"id": "garhis-grotto-character-paths",
-	"title": "Garhi's Grotto - Character Paths",
+	"id": "garhis-grotto-character-path-system",
+	"title": "Garhi's Grotto: Character Path System",
 	"description": "A split off module containing everything related to Character Paths.",
 	"version": "1.0.0",
 	"compatibility": {
@@ -18,8 +18,8 @@
 	],
 	"packs": [
 		{
-			"name": "gg-path-journal",
-			"label": "GG - Path Journals",
+			"name": "gg-path-reference",
+			"label": "GG | Reference: CharacterPath",
 			"path": "packs/path-journal",
 			"type": "JournalEntry",
 			"ownership": {
@@ -31,7 +31,7 @@
 		},
 		{
 			"name": "gg-path-feature",
-			"label": "GG - Path Features",
+			"label": "GG | PathFeature",
 			"path": "packs/path-feature",
 			"type": "Item",
 			"ownership": {
@@ -42,9 +42,9 @@
 			"flags": {}
 		},
 		{
-			"name": "gg-path-actors",
-			"label": "GG - Path Actors",
-			"path": "packs/path-actors",
+			"name": "gg-path-actor",
+			"label": "GG | PathActor",
+			"path": "packs/path-actor",
 			"type": "Actor",
 			"ownership": {
 				"PLAYER": "OBSERVER",
@@ -56,7 +56,7 @@
 	],
 	"packFolders": [
 		{
-			"name": "GG - Character Paths",
+			"name": "GG_Character-Path-System",
 			"sorting": "m",
 			"color": "#4C3661",
 			"packs": [
@@ -89,10 +89,7 @@
 		"requires": []
 	},
 	"flags": {
-		"hotReload": {
-			"extensions": ["css", "hbs", "json"],
-			"paths": ["templates", "styles", "lang"]
-		}
+
 	},
 	"media": [
 		{

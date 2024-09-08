@@ -1,0 +1,8 @@
+2024/09/04-23:32:33.291 ec740 Recovering log #128
+2024/09/04-23:32:33.295 ec740 Delete type=0 #128
+2024/09/04-23:32:33.295 ec740 Delete type=3 #126
+2024/09/05-03:38:14.823 ef298 Level-0 table #133: started
+2024/09/05-03:38:14.824 ef298 Level-0 table #133: 0 bytes OK
+2024/09/05-03:38:14.825 ef298 Delete type=0 #131
+2024/09/05-03:38:14.827 ef298 Manual compaction at level-0 from '!journal!K8hIZvjsdsfxH86U' @ 72057594037927935 : 1 .. '!journal.pages!kKNIOkSCS2IZymU1.rShlIPUan1HGWv6B' @ 0 : 0; will stop at (end)
+2024/09/05-03:38:14.827 ef298 Manual compaction at level-1 from '!journal!K8hIZvjsdsfxH86U' @ 72057594037927935 : 1 .. '!journal.pages!kKNIOkSCS2IZymU1.rShlIPUan1HGWv6B' @ 0 : 0; will stop at (end)
