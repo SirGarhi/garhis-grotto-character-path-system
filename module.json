@@ -5,7 +5,8 @@
 	"version": "1.0.0",
 	"compatibility": {
 		"minimum": "12",
-		"verified": "12"
+		"verified": "12",
+		"maximum": "12.999"
 	},
 	"authors": [
 		{
@@ -19,7 +20,7 @@
 	"packs": [
 		{
 			"name": "gg-path-reference",
-			"label": "GG | Reference: CharacterPath",
+			"label": "GG-Ref| Path System",
 			"path": "packs/path-journal",
 			"type": "JournalEntry",
 			"ownership": {
@@ -31,21 +32,9 @@
 		},
 		{
 			"name": "gg-path-feature",
-			"label": "GG | PathFeature",
+			"label": "GG-Feat | Path Features",
 			"path": "packs/path-feature",
 			"type": "Item",
-			"ownership": {
-				"PLAYER": "OBSERVER",
-				"ASSISTANT": "OWNER"
-			},
-			"system": "dnd5e",
-			"flags": {}
-		},
-		{
-			"name": "gg-path-actor",
-			"label": "GG | PathActor",
-			"path": "packs/path-actor",
-			"type": "Actor",
 			"ownership": {
 				"PLAYER": "OBSERVER",
 				"ASSISTANT": "OWNER"
@@ -56,13 +45,12 @@
 	],
 	"packFolders": [
 		{
-			"name": "GG_Character-Path-System",
+			"name": "GG | Character Path System",
 			"sorting": "m",
 			"color": "#4C3661",
 			"packs": [
 				"gg-path-journal",
-				"gg-path-feature",
-				"gg-path-actors"
+				"gg-path-feature"
 			],
 			"folders": []
 		}
@@ -70,7 +58,12 @@
 	"relationships":{
 		"recommends": [
 			{
-				"id": "garhis-grotto-module",
+				"id": "garhis-grotto-crafting-system",
+				"type": "module",
+				"compatibility": {}
+			},
+			{
+				"id": "garhis-grotto-core",
 				"type": "module",
 				"compatibility": {}
 			}
@@ -86,7 +79,13 @@
 				}
 			}
 		],
-		"requires": []
+		"requires": [
+			{
+				"id": "garhis-grotto-resources",
+				"type": "module",
+				"compatibility": {}
+			}
+		]
 	},
 	"flags": {
 
@@ -94,7 +93,7 @@
 	"media": [
 		{
 			"type": "setup",
-			"url": "modules/garhis-grotto-module/assets/art/branding/garhis-grotto-logo.webp",
+			"url": "modules/garhis-grotto-resources/assets/art/branding/garhis-grotto-logo.webp",
 			"loop": false,
 			"flags": {}
 		}
